@@ -4,15 +4,17 @@
 
 var assert = require('chai').assert;
 var superagent = require('superagent');
-var geography = require("../");
+var formatAddress = require("../");
 
 describe('server testing', function() {
 
-    it('should get geography details ', function() {
+    it('should get geography details ', function(done) {
 
-       geography.getGeographyDetails("7221 hwy 70 S")
-           .then(function (res) {
-               console.log(res);
-           });
+        setTimeout(done, 15000);
+        formatAddress("1016 N plum grove rd").then(function(data){
+            console.log(data);
+            done();
+        });
+
     });
 });

@@ -1,6 +1,6 @@
 {
-  "name": "geography",
-  "description": "Geographical Utilities",
+  "name": "formataddress",
+  "description": "FormatAddress module returns formatted address",
   "version": "0.0.1",
   "author": "Srujan Gopu",
   "contributors": [
